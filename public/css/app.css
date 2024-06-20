@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    display: flex;
+}
+
+main{
+    background: #1D1F20;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    color: unset;
+    text-decoration: unset;
+}
+
+#fil-aryan{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+#fil-aryan aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fil-aryan aside a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#fil-aryan aside a img{
+    width: 32px;
+    cursor: pointer;
+}
+
+#fil-aryan #theme-toggle{
+    outline: 0;
+    background: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+#fil-aryan #theme-toggle img{
+    width: 32px;
+}
+
+#main-menu{
+    min-width: max(21.019vw, 300px);
+    height: 100%;
+    padding: 10px;
+}
+
+.hdr{
+    background: #252C2E;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background .2s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-link:hover .hdr{
+    background: #323b3e;
+}
+
+.hdr img{
+    width: 32px;
+}
+
+.hdr h1{
+    font-size: 26px;
+    color: #fff;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.header-content{
+    margin-top: 30px;
+}
+
+.header-content ul{
+    list-style: none;
+}
+
+.header-content li span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #838E8F;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: background .2s ease-in-out;
+}
+
+.header-content li span img{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.header-content li span:hover{
+    background: #252C2E;
+}
+
+.header-content ul .submenu{
+    display: none;
+    position: relative;
+    z-index: 9;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: opacity .3s ease-in-out, max-height .3s ease-in-out;
+}
+
+.header-content ul .submenu li{
+    display: block;
+    text-transform: capitalize;
+}
+
+.header-content ul .submenu li a{
+    display: block;
+    padding: 5px 45px;
+    color: #838E8F;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+.header-content ul .submenu li a:hover{
+    color: #fff;
+}
+
+.header-content ul .submenu li span{
+    display: block;
+    margin: 0;
+    padding-left: 45px;
+    color: #838E8F;
+    background: unset;
+}
+
+.sub{
+    padding-left: 15px;
+    background: unset;
+}
+
+.rub{
+    padding-left: 25px;
+    background: unset;
+}
+
+.rub li a:hover{
+    color: #fff;
+}
+
+.header-content ul li.active > .submenu{
+    display: block;
+    opacity: 1;
+}
+
+section{
+    background-color: #191C1B;
+    min-height: 885px;
+    width: 98.5%;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    color:#fff;
+}
+
+section::-webkit-scrollbar {
+    width: 12px;
+}
+
+section::-webkit-scrollbar-track {
+    background: #2E2E2E;
+    border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #2E2E2E;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+section {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #2E2E2E;
+}
+
+section::-moz-scrollbar {
+    width: 12px;
+}
+
+section::-moz-scrollbar-track {
+    background: #2E2E2E;
+    border-radius: 10px;
+}
+
+section::-moz-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #2E2E2E;
+}
+
+section::-moz-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
