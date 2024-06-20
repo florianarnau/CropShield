@@ -54,7 +54,7 @@
                 @csrf
             </form>
             <button id="theme-toggle">
-                <img id="theme-icon" src="{{ asset('images/icons/white-theme.png') }}" alt="Changer le thème">
+                <img id="theme-icon" src="{{ asset('images/icons/black-theme.png') }}" alt="Changer le thème">
             </button>
         </header>
         <section>

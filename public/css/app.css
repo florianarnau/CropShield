@@ -31,14 +31,11 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 #fil-aryan{
-    background:#121416;
     width: 100%;
     padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #303234;
-    color: #F7F7F7;
     font-size: 16px;
 }
 
@@ -72,11 +69,9 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 #main-menu{
-    background: #121416;
     min-width: max(21.019vw, 300px);
     height: 100%;
     padding: 10px;
-    border-right: 1px solid #303234;
 }
 
 .hdr{
