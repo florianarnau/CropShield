@@ -16,10 +16,10 @@ class CreateParcelTable extends Migration
         Schema::create('parcel', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('latitude');
-            $table->decimal('longitude');
-            $table->decimal('surface_ha');
-            $table->decimal('perimeters_m');
+            $table->decimal('latitude', 18, 15);
+            $table->decimal('longitude', 18, 15);
+            $table->decimal('surface_ha', 18, 15);
+            $table->decimal('perimeters_m', 18, 15);
             $table->text('polygon_coordinates');
             $table->unsignedBigInteger('station_id');
             $table->timestamps();

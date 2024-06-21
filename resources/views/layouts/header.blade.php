@@ -15,7 +15,9 @@
                     </span>
                     <ul class="submenu">
                         <li><a href="">Lister</a></li>
+                        @if($user_role->name === 'admin')
                         <li><a href="">Ajouter</a></li>
+                        @endif
                     </ul>
                 </li>
                 <li>
@@ -26,7 +28,9 @@
                     <ul class="submenu">
                         <li><a href="">voir les données</a></li>
                         <li><a href="">lister</a></li>
-                        <li><a href="">ajouter</a></li>
+                        @if($user_role->name === 'admin')
+                        <li><a href="">Ajouter</a></li>
+                        @endif
                     </ul>
                 </li>
                 <li>
@@ -59,6 +63,7 @@
                         <li><a href="">export en masse des données des stations</a></li>
                     </ul>
                 </li>
+                @if($user_role->name === 'admin')
                 <li>
                     <span>
                         <img src="{{ asset('images/icons/subscription.png') }}" alt="">
@@ -71,13 +76,16 @@
                         <li><a href="">bloquer / débloquer</a></li>
                     </ul>
                 </li>
+                @endif
                 <li>
                     <span>
                         <img src="{{ asset('images/icons/setting.png') }}" alt="">
                         paramètres
                     </span>
                     <ul class="submenu">
+                        @if($user_role->name === 'admin')
                         <li><a href="">ajouter un utilisateur</a></li>
+                        @endif
                         <li><a href="">station météo</a></li>
                         <li><a href="">graphique</a></li>
                         <li><a href="">emails synthèse journalière</a></li>

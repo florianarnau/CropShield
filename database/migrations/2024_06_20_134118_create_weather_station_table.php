@@ -16,9 +16,9 @@ class CreateWeatherStationTable extends Migration
         Schema::create('weather_station', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->decimal('latitude');
-            $table->decimal('longitude');
-            $table->decimal('altitude');
+            $table->decimal('latitude', 18, 15);
+            $table->decimal('longitude', 18, 15);
+            $table->decimal('altitude', 18, 15);
             $table->string('city');
             $table->string('department');
             $table->boolean('isActive');
