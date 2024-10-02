@@ -47,17 +47,19 @@
                 </a>
                 <p>CS | @yield('pageTitle')</p>
             </aside>
-            <a class="dropdown-item" href="#" onclick="">
-
-            </a>
-            <form id="logout-form" action="" method="POST" style="display:none;">
-                @csrf
-            </form>
-            <button id="theme-toggle">
-                <img id="theme-icon" src="{{ asset('images/icons/black-theme.png') }}" alt="Changer le thème">
-            </button>
+            <div class="theme-logout">
+                <a class="dropdown-item" href="{{ route('authenticate.destroy') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    Déconnexion
+                </a>
+                <form id="logout-form" action="{{ route('authenticate.destroy') }}" method="POST" style="display:none;">
+                    @csrf
+                </form>
+                <button id="theme-toggle">
+                    <img id="theme-icon" src="{{ asset('images/icons/black-theme.png') }}" alt="Changer le thème">
+                </button>
+            </div>
         </header>
-        <section>
+        <section id="panel-view">
             @yield('content')
         </section>
     </main>
