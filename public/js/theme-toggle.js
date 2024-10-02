@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentTheme === 'dark') {
         themeStyleLink.setAttribute('href', '/css/app-black.css');
-        themeIcon.setAttribute('src', '/images/icons/dark-theme.png');
+        themeIcon.setAttribute('src', '/images/icons/white-theme - Copie.png');
     } else {
         themeStyleLink.setAttribute('href', '/css/app-white.css');
         themeIcon.setAttribute('src', '/images/icons/white-theme - Copie.png');
@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentTheme === 'light') {
             themeStyleLink.setAttribute('href', '/css/app-black.css');
             localStorage.setItem('theme', 'dark');
-            themeIcon.setAttribute('src', '/images/icons/dark-theme.png');
+            themeIcon.setAttribute('src', '/images/icons/white-theme - Copie.png');
         } else {
             themeStyleLink.setAttribute('href', '/css/app-white.css');
             localStorage.setItem('theme', 'light');
-            themeIcon.setAttribute('src', '/images/icons/white-theme - Copie.png');
+            themeIcon.setAttribute('src', '/images/icons/dark-theme.png');
         }
 
         // Remove transition class after the transition duration

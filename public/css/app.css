@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, a{
 }
 
 #fil-aryan #theme-toggle img{
-    width: 32px;
+    width: 26px;
 }
 
 #main-menu{
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6, a{
     opacity: 1;
 }
 
-section{
+section#panel-view{
     background-color: #191C1B;
     min-height: 885px;
     width: 98.5%;
@@ -248,3 +248,78 @@ section::-moz-scrollbar-thumb:hover {
     background-color: #555;
 }
 
+#login-section{
+    background: linear-gradient(145deg, rgba(58,58,58,1) 0%, rgba(13,13,13,1) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login-section form{
+    box-shadow: 0 0 30px 0 #1D1F20;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#login-section form img{
+    width: 100px;
+}
+
+#login-section form input{
+    width: 500px;
+    margin: 25px 0 0 0;
+    padding: 15px;
+    background: unset;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #eaeaea;
+    outline: 0;
+    border: unset;
+    border-bottom: 1px solid #555;
+}
+
+#login-section form button{
+    padding: 10px;
+    outline: 0;
+    border: none;
+    text-transform: uppercase;
+    background-color: #44BEB1;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 40px 0;
+    color: #F7F7F7;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+#login-section form button:hover{
+    background: #97DC99;
+}
+
+#mapid-home{
+    width: 100%;
+    height: 100%;
+}
+
+.theme-logout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.theme-logout a{
+    margin-right: 15px;
+    transition: .2s ease-in-out;
+}
+
+.theme-logout a:hover{
+    color: red;
+}
